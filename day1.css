@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(180, 225, 243);
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.foto{
+    width: 100px;
+}
+
+.nama{
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+.container{
+    display: grid;
+    margin: auto;
+    grid-template-areas:
+        "education experience"
+        "skills interests";
+    padding: 20px;
+    max-width: 800px;
+    gap: 15px;
+}
+
+h4{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.education{
+    grid-area: education;
+    background-color: rgb(197, 229, 241);
+}
+
+.experience{
+    grid-area: experience;
+    background-color: rgb(197, 229, 241);
+
+}
+
+.skills{
+    grid-area: skills;
+    background-color: rgb(197, 229, 241);
+}
+
+.interests{
+    grid-area: interests;
+    background-color: rgb(197, 229, 241);
+}
+
+footer{
+    display: grid;
+    background-color: rgb(180, 225, 243);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    grid-template-areas:
+        "kontak"
+        "sosmed";
+    gap: 10px;
+}
+
+.kontak{
+    font-family: "Lucida Console", Courier, monospace;
+    grid-area: kontak;
+}
+
+.sosmed{
+    margin: auto;
+    display: grid;
+    grid-area: sosmed;
+    grid-template-areas:
+        "g1 g2 g3 g4";
+    max-width: 205px;
+    gap: 15px;
+}
+
+.g1{
+    grid-area: g1;
+    width: 40px;
+    height: 40px;
+}
+
+.g2{
+    grid-area: g2;
+    width: 40px;
+    height: 40px;
+}
+
+.g3{
+    grid-area: g3;
+    width: 40px;
+    height: 40px;
+}
+
+.g4{
+    grid-area: g4;
+    width: 40px;
+    height: 40px;
+}
+
+.medsos{
+    width: 40px;
+}
