@@ -1,12 +1,26 @@
-body{
-    background-color: rgb(180, 225, 243);
+body.light{
+    background-color: skyblue;
     margin: 0px;
 }
 
-header{
+body.dark{
+    background-color: black;
+    margin: 0px;
+}
+
+header.light{
     display: flex;
     padding: 20px;
     font-family: "Lucida Console", Courier, monospace;
+    background-color: rgb(180, 225, 243);
+}
+
+header.dark{
+    display: flex;
+    padding: 20px;
+    font-family: "Lucida Console", Courier, monospace;
+    
+    background-color: rgb(56, 61, 63);
 }
 
 .foto{
@@ -55,9 +69,23 @@ h4{
     background-color: rgb(197, 229, 241);
 }
 
-footer{
+footer.light{
     display: grid;
     background-color: rgb(180, 225, 243);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    grid-template-areas:
+        "kontak"
+        "sosmed";
+    gap: 10px;
+}
+
+footer.dark{
+    display: grid;
+    background-color: rgb(56, 61, 63);
     text-align: center;
     padding: 20px;
     position: absolute;
